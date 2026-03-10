@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+      <title>Card</title>
+      <link rel = "stylesheet" type = "text/css" href = "style.css">
+      <script src = "choose.js"></script>
+      
+      <script type="text/javascript" src="html2canvas-master/dist/html2canvas.js"></script>
+</head>
+   <body>
+       <img src="1-1PH1120331.jpg" style="position: fixed;top: 0px;left: 0px;z-index: -1; height: 100%; width:100%;">
+       <bgsound src="music1.mp3" loop="infinite"> </bgsound> 
+       <table style=" margin: auto;text-align: center;" >
+           <th>
+               <div id='container'>
+                    <div class="card" id="border" > 
+                        
+                            <div class="card-image" id="cardimg">
+                                <img src="pic1.jpg" alt="birthday" >
+                            </div>
+                           
+                                <div class="card-date">
+                                <input spellcheck="false" class="input-date" type="text" placeholder="Date"  id="date">
+                                </div><br>
+                                <div class="card-title" >
+                                    <input spellcheck="false" class="input-title" type="text" placeholder="Title"  id="title"><br>
+                                </div><br>
+                                <div class="card-exceprt" >
+                                    <textarea class="input-exceprt" spellcheck="false" placeholder="Write your article here!" 
+                                    id="article" style="resize:none;border:none; width:300px;height:100px ;"  ></textarea>
+                                </div>
+                           
+                        
+                    </div>
+                </div>
+            </th>
+            <th style="width:15%;"></th>
+            <th>
+                <div>
+                    <table  width="90%" >
+                        <thead>
+                           <tr>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                            <th width="80"><strong style="text-align:start;">圖片</strong></th>
+                            <td width="325">
+                                <li><button type="button" onclick="choose(0)"><img src="pic0.jpg" width="80" height="80" ></button></li>
+                                <li><button type="button" onclick="choose(1)"><img src="pic1.jpg" width="80" height="80" ></button></li>
+                                <li><button type="button" onclick="choose(2)"><img src="pic2.jpg" width="80" height="80" ></button></li><br>
+                                <li><button type="button" onclick="choose(4)"><img src="pic4.webp" width="80" height="80" ></button></li>
+                                <li><button type="button" onclick="choose(5)"><img src="pic5.gif" width="80" height="80" ></button></li>
+                                <li><button type="button" onclick="choose(6)"><img src="pic6.gif" width="80" height="80" ></button></li>
+                               
+                              </td>
+                           </tr>
+                           <tr>
+                            <th><strong>圖片網址</strong></th>
+                                <td>
+                                    <input type="url" id="url">
+                                    <button type="button" onclick="choose(7)">確定</button>
+                                    <br>
+                                </td>
+                           </tr>
+                           <tr>
+                            <th><strong>文字顏色</strong></th>
+                            <td>
+                                <li><input type="color" id="colord">
+                                    <button type="button" onclick="datecolor()">date</button></li><br>
+                                <li><input type="color" id="colort">
+                                    <button type="button" onclick="titlecolor()">title</button></li><br>
+                                <li><input type="color" id="colora">
+                                    <button type="button" onclick="articlecolor()">article</button></li>
+                            <br></td>
+                           
+                            
+                            <tr>
+                                <th><strong style="text-align:start;">邊框</strong></th>
+                                <td width="325">
+                                    <li><button type="button" onclick="borderchoose('none')"><img src="border1.png" width="60" height="40" ></button></li>
+                                    <li><button type="button" onclick="borderchoose('dotted')"><img src="border2.png" width="60" height="40" ></button></li>
+                                    <li><button type="button" onclick="borderchoose('dashed')"><img src="border3.png" width="60" height="40" ></button></li>
+                                    <li><button type="button" onclick="borderchoose('double')"><img src="border4.png" width="60" height="40" ></button></li>
+                                    <li><button type="button" onclick="borderchoose('groove')"><img src="border5.png" width="60" height="40" ></button></li>
+                                    <li><button type="button" onclick="borderchoose('solid')"><img src="border6.png" width="60" height="40" ></button></li>
+                                    <li><button type="button" onclick="borderchoose('ridge')"><img src="border7.png" width="60" height="40" ></button></li>
+                                    <li><button type="button" onclick="borderchoose('inset')"><img src="border8.png" width="60" height="40" ></button></li>
+                                    <li><button type="button" onclick="borderchoose('outset')"><img src="border9.png" width="60" height="40" ></button></li><br>
+                                    <li><input type="color" id="colorb">
+                                        <button type="button" onclick="bordercolor()">確定</button></li>
+                                </td>
+                            </tr>
+                        </tr>
+                        <th><strong>字體</strong></th>
+                        <td>
+                            <li><button type="button" onclick="word('Arial')">Arial</button></li>
+                            <li><button type="button" onclick="word('Georgia')">Georgia</button></li>
+                            <li><button type="button" onclick="word('Source Sans Pro')">Source Sans Pro</button></li>
+                            <li><button type="button" onclick="word('Playfair Display')">Playfair Display</button></li><br>
+
+                        </tbody>
+                     </table>
+                </div>
+            </th>
+        </table>
+        <hr>
+        <button onclick="self.location.href='mailto:jasonkkk@kimo.com';"style="display:inline;">sent</button>
+        <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'><br/>
+       
+
+       
+    </body>

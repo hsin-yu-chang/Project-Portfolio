@@ -1,0 +1,193 @@
+/*table
+{
+	border-collapse: collapse;
+	border: 1px solid;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-color: #FFF68F;
+}*/
+
+/*
+table thead
+{
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+}
+.back
+{
+	position: relative;			
+	left: -480px;
+	top: -35px;
+	padding: 0;
+	margin: 0;
+	cursor: wait;
+}
+
+ p { 
+				font-family: "Calligraffitti";
+				font-size: 48px;
+				text-shadow: 3px 3px 3px DimGrey;
+            	width : 48%;
+            	height: 150px;
+            	float:left;
+            	margin-bottom: .5em;
+            	text-align:justify;
+            	box-sizing: border-box;
+            	z-index: 2;
+			 }
+			
+*/
+
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+			 form div
+			 {
+				font-family: "Calligraffitti";
+				font-size: 30px;
+				text-shadow: 3px 3px 3px DimGrey;
+				position: center;
+				font-variant-position: center;
+			 }
+			table thead
+			{
+				background-position: center;
+				background-repeat: no-repeat;
+				margin: 0;
+				padding: 0;
+			}
+			.beautir
+			{
+				font-family: "Calligraffitti";
+				font-size: 48px;
+				text-shadow: 3px 3px 3px DimGrey;
+				position: right;
+			}
+			.beautil
+			{
+				font-family: "Calligraffitti";
+				font-size: 48px;
+				text-shadow: 3px 3px 3px DimGrey;
+			}
+			li
+			{
+				list-style:none;
+				position: relative;
+				margin:0px;
+			}
+			div
+			{
+				font-family: "Calligraffitti";
+				width: 100%;
+				height: 150px;
+				margin-bottom: .5em;
+            	text-align:justify;
+            	box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			p{
+				font-family: cwTeXFangSong;
+                float:none;
+				overflow:hidden;
+				font-size: 30px;
+                z-index: 2;
+			}
+			body            
+			{ 
+				background-color:aquamarine;
+				cursor: url(bobo.gif);
+			}
+			.button
+			{
+            	height: 150px;
+            	font-size: 24px;
+				position:center;
+				padding: 0;
+				margin: 0;
+			}
+			a     { text-decoration: none; }
+			table
+			{
+				border-collapse: collapse;
+				text-align: center;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.text
+			{
+				position: right;
+				padding: 0;
+				margin: 0;
+				float: right;
+				width: 60%;
+				text-align: right;
+				font-size:23px;
+				font-family: 微軟正黑體;
+				font-weight: bold;
+				z-index: 2;
+			}
+			.title
+			{
+				position: relative;			
+				left: 130px;
+				top: -210px;
+				height: 100px;
+				width: 100px;
+				padding: 0;
+				margin: 0;
+			}
+
+      @media only screen and (max-width: 800px){
+		table thead
+		{
+			background-position: center;
+			background-repeat: no-repeat;
+			margin: 0;
+			padding: 0;
+		}
+            p{
+                float:none;
+                overflow:hidden;
+                width : 100%;
+                height: auto;
+                z-index: 2;
+            }
+/*
+.butt
+{
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.title
+{
+	position: relative;			
+	left: 130px;
+	top: -210px;
+	height: 100px;
+	width: 100px;
+	padding: 0;
+	margin: 0;
+}
+.text
+{
+	position: relative;
+	right: 40px;
+	top: -110px;
+	padding: 0;
+	margin: 0;
+	float: right;
+	width: 60%;
+	text-align: left;
+	font-size:23px;
+	font-family: 微軟正黑體;
+	color: #FF5755;
+	font-weight: bold;
+}
